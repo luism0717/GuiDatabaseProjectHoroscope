@@ -27,7 +27,6 @@ public class Person {
     this.zodiacImage = zodiacImage;
   }
 
-
   public String getFirstName() {
     return firstName.get();
   }

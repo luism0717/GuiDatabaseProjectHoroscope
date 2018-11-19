@@ -155,6 +155,5 @@ public class HoroscopeController implements Initializable {
     window.setScene(tableViewPersonInformationScene);
     window.show();
   }
-
 }
 
