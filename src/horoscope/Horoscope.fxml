@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" stylesheets="@HoroscopeTheme.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="horoscope.HoroscopeController">
+   <children>
+      <GridPane layoutX="-6.0" layoutY="14.0" prefHeight="584.0" prefWidth="800.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="500.0" minWidth="10.0" prefWidth="412.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="529.0" minWidth="10.0" prefWidth="388.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="569.0" minHeight="10.0" prefHeight="568.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="393.0" minHeight="10.0" prefHeight="26.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <GridPane prefHeight="337.0" prefWidth="454.0" GridPane.columnIndex="1">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="180.0" minWidth="10.0" prefWidth="125.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="288.0" minWidth="10.0" prefWidth="162.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="175.0" minWidth="10.0" prefWidth="105.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints maxHeight="106.0" minHeight="0.0" prefHeight="52.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="120.0" minHeight="20.0" prefHeight="48.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="152.0" minHeight="20.0" prefHeight="51.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="230.0" minHeight="0.0" prefHeight="43.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="318.0" minHeight="19.0" prefHeight="242.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <TextField fx:id="nameFieldFirst" promptText="First Name" GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                     <GridPane.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </GridPane.margin>
+                  </TextField>
+                  <TextField fx:id="nameFieldLast" layoutX="210.0" layoutY="146.0" promptText="Last Name" GridPane.columnIndex="1" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                     <GridPane.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </GridPane.margin></TextField>
+                  <Label text="First Name :" textFill="WHITE" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                  <Label layoutX="138.0" layoutY="51.0" text="Last Name :" textFill="WHITE" GridPane.halignment="RIGHT" GridPane.rowIndex="2" />
+                  <Label layoutX="138.0" layoutY="150.0" text="Zodiac Sign :" textFill="WHITE" GridPane.halignment="RIGHT" GridPane.rowIndex="3" />
+                  <Button mnemonicParsing="false" onAction="#addButtonClicked" text="  Add  " GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                  <Button layoutX="370.0" layoutY="86.0" mnemonicParsing="false" onAction="#removeButtonClicked" text="Remove" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                  <Button fx:id="buttonViewDetail" layoutX="360.0" layoutY="270.0" mnemonicParsing="false" onAction="#changeSceneToPersonView" text="View Detail" GridPane.columnIndex="2" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+                  <ComboBox fx:id="zodiacComboBox" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+                     <GridPane.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </GridPane.margin>
+                  </ComboBox>
+               </children>
+            </GridPane>
+            <Label text="Hososcope Program Copyright ©" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+               <GridPane.margin>
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+               </GridPane.margin>
+            </Label>
+            <TableView fx:id="tableViewPersonInformation" onMouseClicked="#userClickedTable" prefHeight="355.0" prefWidth="336.0">
+              <columns>
+                <TableColumn fx:id="firstNameColumn" prefWidth="113.0" text="First Name" />
+                <TableColumn fx:id="lastNameColumn" prefWidth="137.0" text="Last Name" />
+                  <TableColumn fx:id="zodiacColumn" prefWidth="120.0" text="Zodiac" />
+              </columns>
+               <GridPane.margin>
+                  <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+               </GridPane.margin>
+            </TableView>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
