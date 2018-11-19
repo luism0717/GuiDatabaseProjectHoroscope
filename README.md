@@ -1,5 +1,4 @@
 # GuiDatabaseProjectHoroscope
-newProject
 
 ## JavaFX database
 ##### The program allows you to add people and store their horoscope and a scene will take you to a detailed view of the horoscope and allow you to change the image
