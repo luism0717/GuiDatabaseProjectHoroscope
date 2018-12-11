@@ -13,6 +13,11 @@
 ## Built with
 ##### Derby- Database System, JavaFX, Intellij
 
+
+## Database Diagram
+![Alt Text](https://github.com/luism0717/GuiDatabaseProjectHoroscope/blob/master/idea64_B0eGhEJpFR.png)
+
+
 ## Credit
 ##### Luis (Program Creator),Kamp Duong (Code Contributer), jaret wright (Code Contributor)
 
