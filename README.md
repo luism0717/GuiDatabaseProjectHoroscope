@@ -6,6 +6,10 @@
 ## Gui Design
 ##### The program is aesthetically pleasing as it uses colors to asimilate a horoscope program. It is very clear that you must first select a class and if you do not first select a class the program will tell you to. It is very predictable as to what you are going to get when you click on each button.
 
+## Demonstration
+
+![Alt Text](https://github.com/luism0717/GuiDatabaseProjectHoroscope/blob/master/T1JlnahRJZ.gif)
+
 ## Built with
 ##### Derby- Database System, JavaFX, Intellij
 
